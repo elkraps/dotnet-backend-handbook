@@ -51,7 +51,3 @@
 | IExceptionFilter | [10-filters.md](./10-filters.md) |
 | ServiceFilter vs TypeFilter | [10-filters.md](./10-filters.md) |
 | Полная диаграмма pipeline | [10-filters.md](./10-filters.md) |
-
-## Источники
-
-- `ИИ конспекты/aspnet-pipeline.md` — исходный конспект (~1500 строк)

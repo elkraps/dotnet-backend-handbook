@@ -50,6 +50,3 @@
 | Explicit Implementation | [09-interfaces.md](./09-interfaces.md) |
 | Covariance / Contravariance | [09-interfaces.md](./09-interfaces.md) |
 
-## Источники
-
-- `ИИ конспекты/clr-fundamentals.md`

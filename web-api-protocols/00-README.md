@@ -53,7 +53,3 @@ REST, gRPC, GraphQL, OData — четыре подхода к построени
 | REST vs gRPC vs GraphQL vs OData | [08-comparison.md](./08-comparison.md) |
 | Когда какой протокол выбрать | [08-comparison.md](./08-comparison.md) |
 | Комбинирование протоколов | [08-comparison.md](./08-comparison.md) |
-
-## Источники
-
-- `ИИ конспекты/web-api-protocols.md` — исходный конспект (~1770 строк, 4 протокола)

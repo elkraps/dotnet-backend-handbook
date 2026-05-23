@@ -40,6 +40,3 @@
 | Keyset pagination, OFFSET | [09-query-optimization.md](./09-query-optimization.md) |
 | Partition pruning, pg_partman | [09-query-optimization.md](./09-query-optimization.md) |
 
-## Источники
-
-- `ИИ конспекты/databases-internals.md` — исходный конспект (~1095 строк, PostgreSQL internals)

@@ -63,7 +63,3 @@ EF Core — основной ORM в экосистеме .NET. LINQ — язык
 | Multi-mapping (JOIN → несколько объектов) | [08-dapper.md](./08-dapper.md) |
 | EF Core vs Dapper сравнение | [08-dapper.md](./08-dapper.md) |
 | Паттерн EF Core + Dapper | [08-dapper.md](./08-dapper.md) |
-
-## Источники
-
-- `ИИ конспекты/ef-linq-data-access.md` — исходный конспект (~2500 строк)

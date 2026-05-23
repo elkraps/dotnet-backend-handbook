@@ -65,6 +65,3 @@
         └── Thread-safe коллекция → ConcurrentDictionary / ConcurrentQueue
 ```
 
-## Источники
-
-- `ИИ конспекты/synchronization-primitives.md`
