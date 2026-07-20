@@ -7,11 +7,13 @@
 ## 1. ООП и основы C#
 
 ### Концепции ООП
-- [ ] Что такое ООП? Назови четыре принципа (инкапсуляция, наследование, полиморфизм, абстракция) — объясни каждый с примером на C#
-- [ ] Чем абстрактный класс отличается от интерфейса? Когда использовать каждый?
-- [ ] Что такое полиморфизм? Чем compile-time (перегрузка) отличается от runtime (переопределение)?
+- [ ] Что такое ООП? Назови четыре принципа (инкапсуляция, наследование, полиморфизм, абстракция) — объясни каждый с примером на C# — [oop-and-design/01-oop-principles.md](./oop-and-design/01-oop-principles.md)
+- [ ] Чем абстрактный класс отличается от интерфейса? Когда использовать каждый? — [oop-and-design/01-oop-principles.md](./oop-and-design/01-oop-principles.md)
+- [ ] Что такое полиморфизм? Чем compile-time (перегрузка) отличается от runtime (переопределение)? Как работает vtable? — [oop-and-design/01-oop-principles.md](./oop-and-design/01-oop-principles.md)
 - [ ] Что такое ковариантность и контравариантность в generic-типах и делегатах?
-- [ ] Чем `sealed` класс отличается от обычного? Когда это важно для производительности?
+- [ ] Чем `sealed` класс отличается от обычного? Когда это важно для производительности? — [oop-and-design/01-oop-principles.md](./oop-and-design/01-oop-principles.md)
+- [ ] Что такое Fragile Base Class Problem? Почему `override` и `new` — не одно и то же? — [oop-and-design/01-oop-principles.md](./oop-and-design/01-oop-principles.md)
+- [ ] Иерархия интерфейсов коллекций (`IEnumerable`/`ICollection`/`IList`), concurrent-коллекции — [oop-and-design/07-collections.md](./oop-and-design/07-collections.md)
 
 ### Типы данных C#
 - [ ] Чем value type отличается от reference type? Где хранится каждый? — [clr-fundamentals/02-value-reference-types.md](./clr-fundamentals/02-value-reference-types.md)
@@ -166,40 +168,46 @@
 
 ## 8. SOLID и принципы проектирования
 
-- [ ] SRP — Single Responsibility Principle: что значит «одна ответственность»? Как определить границу?
-- [ ] OCP — Open/Closed Principle: как расширять поведение не меняя код? Примеры через полиморфизм
-- [ ] LSP — Liskov Substitution Principle: что нарушает LSP? Примеры нарушений
-- [ ] ISP — Interface Segregation Principle: почему маленькие интерфейсы лучше fat interface?
-- [ ] DIP — Dependency Inversion Principle: чем отличается от DI-контейнера?
+- [ ] SRP — Single Responsibility Principle: что значит «одна ответственность»? Как определить границу? — [oop-and-design/02-solid.md](./oop-and-design/02-solid.md)
+- [ ] OCP — Open/Closed Principle: как расширять поведение не меняя код? Примеры через полиморфизм — [oop-and-design/02-solid.md](./oop-and-design/02-solid.md)
+- [ ] LSP — Liskov Substitution Principle: что нарушает LSP? Примеры нарушений — [oop-and-design/02-solid.md](./oop-and-design/02-solid.md)
+- [ ] ISP — Interface Segregation Principle: почему маленькие интерфейсы лучше fat interface? — [oop-and-design/02-solid.md](./oop-and-design/02-solid.md)
+- [ ] DIP — Dependency Inversion Principle: чем отличается от DI-контейнера? — [oop-and-design/02-solid.md](./oop-and-design/02-solid.md)
 - [ ] DRY, YAGNI, KISS — когда DRY вреден? Что такое wrong abstraction?
-- [ ] Composition over inheritance — почему предпочтительнее? Примеры
+- [ ] Composition over inheritance — почему предпочтительнее? Примеры — [oop-and-design/01-oop-principles.md](./oop-and-design/01-oop-principles.md)
+- [ ] GRASP: Information Expert, Creator, Controller, Low/High Cohesion, Pure Fabrication, Indirection, Protected Variations — [oop-and-design/03-grasp.md](./oop-and-design/03-grasp.md)
+- [ ] God Object, Anemic Domain Model, Service Locator — почему это антипаттерны? — [oop-and-design/08-antipatterns.md](./oop-and-design/08-antipatterns.md)
 
 ---
 
 ## 9. Design Patterns
 
 ### Порождающие
-- [ ] Singleton: как реализовать thread-safe в .NET? Почему Singleton в DI лучше?
-- [ ] Factory Method vs Abstract Factory — в чём разница? Примеры применения
-- [ ] Builder — когда нужен? Примеры с Fluent API
+- [ ] Singleton: как реализовать thread-safe в .NET? Почему Singleton в DI лучше? — [oop-and-design/04-gof-creational.md](./oop-and-design/04-gof-creational.md)
+- [ ] Factory Method vs Abstract Factory — в чём разница? Примеры применения — [oop-and-design/04-gof-creational.md](./oop-and-design/04-gof-creational.md)
+- [ ] Builder — когда нужен? Примеры с Fluent API — [oop-and-design/04-gof-creational.md](./oop-and-design/04-gof-creational.md)
+- [ ] Prototype — когда клонирование дешевле создания? Shallow vs deep copy — [oop-and-design/04-gof-creational.md](./oop-and-design/04-gof-creational.md)
 
 ### Структурные
-- [ ] Decorator — как работает? Чем отличается от Proxy? Примеры в ASP.NET (middleware)
-- [ ] Adapter vs Facade — разница, примеры
+- [ ] Decorator — как работает? Чем отличается от Proxy? Примеры в ASP.NET (middleware) — [oop-and-design/05-gof-structural.md](./oop-and-design/05-gof-structural.md)
+- [ ] Adapter vs Facade — разница, примеры — [oop-and-design/05-gof-structural.md](./oop-and-design/05-gof-structural.md)
 - [ ] Composite — когда применять? Дерево объектов
+- [ ] Proxy — виды (Virtual, Protection, Caching, Remote) — [oop-and-design/05-gof-structural.md](./oop-and-design/05-gof-structural.md)
 
 ### Поведенческие
-- [ ] Strategy — как заменяет if/else? Пример с DI
-- [ ] Observer — EventHandler vs IObserver, Rx Extensions
-- [ ] Command — связь с CQRS. Как MediatR реализует паттерн Command
-- [ ] Chain of Responsibility — как работает? Middleware как пример в ASP.NET Core
+- [ ] Strategy — как заменяет if/else? Пример с DI — [oop-and-design/06-gof-behavioral.md](./oop-and-design/06-gof-behavioral.md)
+- [ ] Observer — EventHandler vs IObserver, Rx Extensions — [oop-and-design/06-gof-behavioral.md](./oop-and-design/06-gof-behavioral.md)
+- [ ] Command — связь с CQRS. Как MediatR реализует паттерн Command — [oop-and-design/06-gof-behavioral.md](./oop-and-design/06-gof-behavioral.md)
+- [ ] Chain of Responsibility — как работает? Middleware как пример в ASP.NET Core — [oop-and-design/06-gof-behavioral.md](./oop-and-design/06-gof-behavioral.md)
+- [ ] Template Method — чем отличается от Strategy (наследование vs композиция)? — [oop-and-design/06-gof-behavioral.md](./oop-and-design/06-gof-behavioral.md)
+- [ ] Mediator — как MediatR избавляет контроллеры от прямых зависимостей на десятки сервисов? — [oop-and-design/06-gof-behavioral.md](./oop-and-design/06-gof-behavioral.md)
 
 ---
 
 ## 10. DDD и архитектурные паттерны
 
 ### Основы DDD
-- [ ] Что такое DDD? Bounded Context, Ubiquitous Language
+- [ ] Что такое DDD? Bounded Context, Ubiquitous Language — [microservices/01-architecture-paradigms.md](./microservices/01-architecture-paradigms.md)
 - [ ] Entity vs Value Object — в чём разница? Как определить?
 - [ ] Что такое Aggregate и Aggregate Root? Правила консистентности внутри агрегата
 - [ ] Что такое Domain Event? Как публиковать и обрабатывать?
@@ -207,10 +215,10 @@
 - [ ] Что такое Application Service vs Domain Service?
 
 ### CQRS и Event Sourcing
-- [ ] Что такое CQRS? Зачем разделять модели чтения и записи? Когда оправдано?
-- [ ] Как реализовать CQRS с MediatR в ASP.NET Core? IRequest, IRequestHandler
-- [ ] Что такое Event Sourcing? Чем отличается от state-based хранения?
-- [ ] Что такое Outbox Pattern? Зачем нужен при работе с доменными событиями и внешними системами?
+- [ ] Что такое CQRS? Зачем разделять модели чтения и записи? Когда оправдано? — [microservices/03-data-patterns.md](./microservices/03-data-patterns.md)
+- [ ] Как реализовать CQRS с MediatR в ASP.NET Core? IRequest, IRequestHandler — [oop-and-design/06-gof-behavioral.md](./oop-and-design/06-gof-behavioral.md)
+- [ ] Что такое Event Sourcing? Чем отличается от state-based хранения? — [microservices/03-data-patterns.md](./microservices/03-data-patterns.md)
+- [ ] Что такое Outbox Pattern? Зачем нужен при работе с доменными событиями и внешними системами? — [microservices/05-saga-outbox.md](./microservices/05-saga-outbox.md)
 
 ### Clean Architecture
 - [ ] Слои Clean Architecture / Onion Architecture: Domain, Application, Infrastructure, Presentation
@@ -273,24 +281,28 @@
 
 ## 15. Микросервисы и Messaging
 
-- [ ] Монолит vs Микросервисы — когда переходить? Трейдоффы
-- [ ] Что такое API Gateway? Задачи: routing, rate limiting, auth, aggregation
-- [ ] Что такое Service Discovery? Consul, Kubernetes DNS
-- [ ] Паттерны межсервисной коммуникации: sync (HTTP/gRPC) vs async (messaging)
+- [ ] Монолит vs Микросервисы — когда переходить? Трейдоффы — [microservices/01-architecture-paradigms.md](./microservices/01-architecture-paradigms.md)
+- [ ] Что такое API Gateway? Задачи: routing, rate limiting, auth, aggregation — [microservices/06-gateway-discovery.md](./microservices/06-gateway-discovery.md)
+- [ ] Что такое Service Discovery? Consul, Kubernetes DNS — [microservices/06-gateway-discovery.md](./microservices/06-gateway-discovery.md)
+- [ ] Паттерны межсервисной коммуникации: sync (HTTP/gRPC) vs async (messaging) — [microservices/02-communication.md](./microservices/02-communication.md)
 - [ ] Что такое RabbitMQ? Exchange types (direct, fanout, topic, headers). Exactly-once delivery?
 - [ ] Что такое Kafka? Topic, Partition, Consumer Group. Чем отличается от RabbitMQ?
-- [ ] Что такое Saga Pattern? Choreography vs Orchestration
-- [ ] Что такое Circuit Breaker? Паттерн Bulkhead. Polly в .NET
-- [ ] Что такое Outbox Pattern? Как гарантировать доставку сообщений?
+- [ ] Что такое Saga Pattern? Choreography vs Orchestration — [microservices/05-saga-outbox.md](./microservices/05-saga-outbox.md)
+- [ ] Что такое Circuit Breaker? Паттерн Bulkhead. Polly в .NET — [microservices/04-reliability-polly.md](./microservices/04-reliability-polly.md)
+- [ ] Что такое Outbox Pattern? Как гарантировать доставку сообщений? — [microservices/05-saga-outbox.md](./microservices/05-saga-outbox.md)
+- [ ] BFF, Service Mesh (Istio) — когда нужны? — [microservices/06-gateway-discovery.md](./microservices/06-gateway-discovery.md)
+- [ ] Distributed Monolith, Chatty Services, Big Bang Rewrite — почему это антипаттерны? — [microservices/09-antipatterns.md](./microservices/09-antipatterns.md)
+- [ ] Distributed Tracing: Trace, Span, W3C Trace Context — как OpenTelemetry связывает запрос через несколько сервисов? — [microservices/07-observability.md](./microservices/07-observability.md)
+- [ ] RED и USE методы — какие метрики снимать с сервиса и с инфраструктуры? — [microservices/07-observability.md](./microservices/07-observability.md)
 
 ---
 
 ## 16. Docker и Kubernetes
 
 - [ ] Что такое Docker? Чем контейнер отличается от VM?
-- [ ] Как написать многоэтапный `Dockerfile` для .NET? Зачем multi-stage build?
+- [ ] Как написать многоэтапный `Dockerfile` для .NET? Зачем multi-stage build? — [microservices/08-deployment.md](./microservices/08-deployment.md)
 - [ ] Что такое Docker Compose? Как поднять приложение с БД и Redis?
-- [ ] Что такое Kubernetes? Pod, Deployment, Service, Ingress — объясни связь
-- [ ] Liveness vs Readiness vs Startup probe — в чём разница? Как настроить?
-- [ ] Что такое ConfigMap и Secret в Kubernetes?
-- [ ] Rolling update vs Blue-Green vs Canary deployment — когда что применять?
+- [ ] Что такое Kubernetes? Pod, Deployment, Service, Ingress — объясни связь — [microservices/08-deployment.md](./microservices/08-deployment.md)
+- [ ] Liveness vs Readiness vs Startup probe — в чём разница? Как настроить? — [microservices/07-observability.md](./microservices/07-observability.md)
+- [ ] Что такое ConfigMap и Secret в Kubernetes? — [microservices/08-deployment.md](./microservices/08-deployment.md)
+- [ ] Rolling update vs Blue-Green vs Canary deployment — когда что применять? — [microservices/08-deployment.md](./microservices/08-deployment.md)

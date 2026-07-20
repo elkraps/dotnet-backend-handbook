@@ -1,5 +1,16 @@
 # dotnet-handbook — структурированные конспекты по .NET для подготовки к собеседованию
 
+<div align="center">
+
+> Чтобы не пропустить обновления: поставь ⭐ репозиторию и подпишись на [тг-канал](https://t.me/elkraps_sandbox) — общаемся про IT, бонусом собрал PDF-сборник всех тем.
+
+[![Telegram](https://img.shields.io/badge/Telegram-@elkraps__sandbox-26A5E4?logo=telegram&logoColor=white)](https://t.me/elkraps_sandbox)
+[![GitHub stars](https://img.shields.io/github/stars/elkraps/dotnet-backend-handbook?style=social)](https://github.com/elkraps/dotnet-backend-handbook)
+
+</div>
+
+---
+
 Декомпозированные конспекты по темам. Каждая папка — одна тема, разбитая на файлы по одному концепту. Читаются за один присест, содержат Mermaid-диаграммы, реальные C# примеры и разбор внутреннего устройства.
 
 ---
@@ -28,3 +39,15 @@
 |------|----------|
 | [ASP.NET Core Pipeline](./aspnet-pipeline/README.md) | Kestrel, жизненный цикл запроса, middleware, routing, model binding, DI, конфигурация, фоновые сервисы, фильтры. |
 | [Web API Protocols](./web-api-protocols/00-README.md) | REST, gRPC/Protobuf, GraphQL/HotChocolate, OData — принципы, .NET реализация, сравнение и дерево выбора. |
+
+### Проектирование
+
+| Тема | Описание |
+|------|----------|
+| [ООП, SOLID, GRASP, паттерны](./oop-and-design/README.md) | 4 принципа ООП, SOLID, GRASP, GoF-паттерны (порождающие/структурные/поведенческие), коллекции .NET, антипаттерны. |
+
+### Архитектура распределённых систем
+
+| Тема | Описание |
+|------|----------|
+| [Микросервисы](./microservices/README.md) | Архитектурные парадигмы, коммуникация, паттерны данных (CQRS/Event Sourcing), reliability (Polly), Saga/Outbox, Gateway/Discovery, observability, deployment, антипаттерны. |
