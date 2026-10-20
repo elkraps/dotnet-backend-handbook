@@ -244,26 +244,33 @@
 
 ## 12. Кэширование
 
-- [ ] Виды кэширования: In-Memory, Distributed (Redis), Response Cache, Output Cache
-- [ ] Что такое `IMemoryCache` vs `IDistributedCache`? Когда использовать каждый?
-- [ ] Как работает Redis? Структуры данных (String, Hash, List, Set, Sorted Set)
-- [ ] Cache-aside vs Write-through vs Write-behind — паттерны инвалидации
-- [ ] Что такое cache stampede? Как защититься? (mutex lock, probabilistic early expiry)
+- [ ] Виды кэширования: In-Memory, Distributed (Redis), Response Cache, Output Cache — [caching/01-cache-levels.md](./caching/01-cache-levels.md)
+- [ ] Что такое `IMemoryCache` vs `IDistributedCache`? Когда использовать каждый? — [caching/06-dotnet-cache.md](./caching/06-dotnet-cache.md)
+- [ ] Как работает Redis? Структуры данных (String, Hash, List, Set, Sorted Set) — [caching/05-redis-basics.md](./caching/05-redis-basics.md)
+- [ ] Cache-aside vs Write-through vs Write-behind — паттерны инвалидации — [caching/02-cache-strategies.md](./caching/02-cache-strategies.md)
+- [ ] Что такое cache stampede? Как защититься? (mutex lock, probabilistic early expiry) — [caching/08-cache-problems.md](./caching/08-cache-problems.md)
 - [ ] `HybridCache` (.NET 9) — что это и как работает?
 - [ ] HTTP кэширование: Cache-Control, ETag, Last-Modified, conditional requests
+
+- [ ] Как возникает гонка заполнения кеша после инвалидации? Как помогают TTL, версии и Outbox? — [caching/07-invalidation-consistency.md](./caching/07-invalidation-consistency.md)
+- [ ] Чем lease на Redis отличается от строгой блокировки? Как сделать атомарный rate limiter? — [caching/09-practical-patterns.md](./caching/09-practical-patterns.md)
 
 ---
 
 ## 13. Тестирование
 
-- [ ] Unit vs Integration vs E2E тесты — пирамида тестирования. Где баланс?
-- [ ] Что такое mocking? `Mock<T>` в Moq — как настроить `Setup`, `Verify`?
-- [ ] Зачем использовать `Testcontainers`? Как написать интеграционный тест с реальной БД?
-- [ ] Как тестировать ASP.NET Core контроллеры? `WebApplicationFactory<T>`, `HttpClient`
-- [ ] Что такое Test Doubles: mock, stub, fake, spy, dummy — разница?
-- [ ] Как тестировать async-код? `async Task` тесты, `await Assert.ThrowsAsync`
-- [ ] Что такое Arrange-Act-Assert (AAA) паттерн?
-- [ ] Как тестировать EF Core? `InMemory` provider vs Testcontainers — почему второй лучше?
+- [ ] Unit vs Integration vs E2E тесты — пирамида тестирования. Где баланс? — [testing/01-test-pyramid-and-types.md](./testing/01-test-pyramid-and-types.md)
+- [ ] Что такое mocking? `Mock<T>` в Moq — как настроить `Setup`, `Verify`? — [testing/03-test-doubles.md](./testing/03-test-doubles.md)
+- [ ] Зачем использовать `Testcontainers`? Как написать интеграционный тест с реальной БД? — [testing/06-integration-tests.md](./testing/06-integration-tests.md)
+- [ ] Как тестировать ASP.NET Core контроллеры? `WebApplicationFactory<T>`, `HttpClient` — [testing/06-integration-tests.md](./testing/06-integration-tests.md)
+- [ ] Что такое Test Doubles: mock, stub, fake, spy, dummy — разница? — [testing/03-test-doubles.md](./testing/03-test-doubles.md)
+- [ ] Как тестировать async-код? `async Task` тесты, `await Assert.ThrowsAsync` — [testing/02-aaa-first.md](./testing/02-aaa-first.md)
+- [ ] Что такое Arrange-Act-Assert (AAA) паттерн? — [testing/02-aaa-first.md](./testing/02-aaa-first.md)
+- [ ] Как тестировать EF Core? `InMemory` provider vs Testcontainers — почему второй лучше? — [testing/06-integration-tests.md](./testing/06-integration-tests.md)
+
+- [ ] Почему 100% coverage не гарантирует качество? Что показывает mutation testing? — [testing/07-coverage-and-mutation.md](./testing/07-coverage-and-mutation.md)
+- [ ] Как xUnit создаёт экземпляры классов и разделяет fixtures? Как избежать конфликтов при параллельном запуске? — [testing/08-xunit-internals.md](./testing/08-xunit-internals.md)
+- [ ] Когда выбрать Test Data Builder, а когда Object Mother? — [testing/05-test-data.md](./testing/05-test-data.md)
 
 ---
 

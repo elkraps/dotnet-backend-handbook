@@ -27,8 +27,23 @@
 
 ---
 
+## Навигация
+
+[Каталог тем](#topics) · [Чеклист собеседования](./INTERVIEW_CHECKLIST.md) · [Полезные материалы](#resources)
+
+| Задача | Маршрут чтения |
+|---|---|
+| Повторить основу .NET | [CLR](./clr-fundamentals/README.md) → [async/await](./async-await/README.md) → [синхронизация](./synchronization-primitives/README.md) → [TPL](./tpl-parallel/README.md) |
+| Разобрать backend-запрос | [Pipeline](./aspnet-pipeline/README.md) → [Web API](./web-api-protocols/00-README.md) → [EF/LINQ](./ef-linq-data-access/00-README.md) → [БД](./database-internals/00-README.md) |
+| Проверить корректность и производительность | [Проектирование](./oop-and-design/README.md) → [Testing](./testing/README.md) → [Caching](./caching/README.md) |
+| Подготовиться к архитектурному интервью | [Микросервисы](./microservices/README.md) → [чеклист](./INTERVIEW_CHECKLIST.md) |
+
+**Группы:** [Runtime](#runtime) · [Данные](#data) · [Кэш](#cache) · [API](#api) · [Проектирование](#design) · [Тестирование](#testing) · [Архитектура](#architecture).
+
+<a id="topics"></a>
 ## Темы
 
+<a id="runtime"></a>
 ### Рантайм и основы
 
 | Тема | Описание |
@@ -38,6 +53,7 @@
 | [Synchronization Primitives](./synchronization-primitives/README.md) | Memory model, `lock`, Monitor, `SemaphoreSlim`, `ReaderWriterLockSlim`, Interlocked, volatile, lock-free алгоритмы, concurrent коллекции. |
 | [TPL & Parallel](./tpl-parallel/README.md) | `Task.Run`, `Parallel.For`, PLINQ, TPL Dataflow, партиционирование, паттерны конвейеров и MapReduce. |
 
+<a id="data"></a>
 ### Данные и доступ к БД
 
 | Тема | Описание |
@@ -45,6 +61,14 @@
 | [EF Core + LINQ](./ef-linq-data-access/00-README.md) | IQueryable vs IEnumerable, Change Tracker, LINQ→SQL трансляция, N+1, Include/Select, связи, Fluent API, Dapper. |
 | [Database Internals](./database-internals/00-README.md) | PostgreSQL под капотом: MVCC, транзакции, изоляция, блокировки, B-tree/GIN индексы, JOIN алгоритмы, шардирование, репликация, HA. |
 
+<a id="cache"></a>
+### Кеширование
+
+| Тема | Описание |
+|------|----------|
+| [Caching](./caching/README.md) | Уровни и стратегии кеша, TTL/LRU/LFU, Memcached, Redis, .NET, инвалидация, stampede и практические паттерны. |
+
+<a id="api"></a>
 ### Веб и API
 
 | Тема | Описание |
@@ -52,18 +76,28 @@
 | [ASP.NET Core Pipeline](./aspnet-pipeline/README.md) | Kestrel, жизненный цикл запроса, middleware, routing, model binding, DI, конфигурация, фоновые сервисы, фильтры. |
 | [Web API Protocols](./web-api-protocols/00-README.md) | REST, gRPC/Protobuf, GraphQL/HotChocolate, OData — принципы, .NET реализация, сравнение и дерево выбора. |
 
+<a id="design"></a>
 ### Проектирование
 
 | Тема | Описание |
 |------|----------|
 | [ООП, SOLID, GRASP, паттерны](./oop-and-design/README.md) | 4 принципа ООП, SOLID, GRASP, GoF-паттерны (порождающие/структурные/поведенческие), коллекции .NET, антипаттерны. |
 
+<a id="testing"></a>
+### Тестирование
+
+| Тема | Описание |
+|------|----------|
+| [Testing](./testing/README.md) | Пирамида тестов, AAA/FIRST, test doubles, unit- и integration-тесты, тестовые данные, coverage/mutation, xUnit и антипаттерны. |
+
+<a id="architecture"></a>
 ### Архитектура распределённых систем
 
 | Тема | Описание |
 |------|----------|
 | [Микросервисы](./microservices/README.md) | Архитектурные парадигмы, коммуникация, паттерны данных (CQRS/Event Sourcing), reliability (Polly), Saga/Outbox, Gateway/Discovery, observability, deployment, антипаттерны. |
 
+<a id="resources"></a>
 ## Полезные материалы
 
 | Раздел | Описание |
