@@ -38,7 +38,7 @@
 | Проверить корректность и производительность | [Проектирование](./oop-and-design/README.md) → [Testing](./testing/README.md) → [Caching](./caching/README.md) |
 | Подготовиться к архитектурному интервью | [Микросервисы](./microservices/README.md) → [чеклист](./INTERVIEW_CHECKLIST.md) |
 
-**Группы:** [Runtime](#runtime) · [Данные](#data) · [Кэш](#cache) · [API](#api) · [Проектирование](#design) · [Тестирование](#testing) · [Архитектура](#architecture).
+**Группы:** [Runtime](#runtime) · [Данные](#data) · [Кэш](#cache) · [API](#api) · [Проектирование](#design) · [Тестирование](#testing) · [Архитектура](#architecture) · [LLM и агенты](#llm).
 
 <a id="topics"></a>
 ## Темы
@@ -96,6 +96,13 @@
 | Тема | Описание |
 |------|----------|
 | [Микросервисы](./microservices/README.md) | Архитектурные парадигмы, коммуникация, паттерны данных (CQRS/Event Sourcing), reliability (Polly), Saga/Outbox, Gateway/Discovery, observability, deployment, антипаттерны. |
+
+<a id="llm"></a>
+### LLM и агенты
+
+| Тема | Описание |
+|------|----------|
+| [LLM, агенты и harness](./llm-agents/README.md) | Токены, Transformer, обучение, inference, tool use, harness, подагенты, MCP, RAG, память и надёжность. |
 
 <a id="resources"></a>
 ## Полезные материалы
